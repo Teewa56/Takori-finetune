@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starel AI prototype</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+    <div class="bg-white shadow-lg rounded-lg p-8 w-full max-w-xl">
+        <h1 class="text-2xl font-bold text-blue-700 mb-6 text-center">Starel AI</h1>
+        <div class="flex flex-col gap-4">
+            <input type="text" id="question" placeholder="Type your question..." class="border border-gray-300 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+            <button onclick="askAI()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 rounded transition">Ask</button>
+        </div>
+        <div class="mt-6">
+            <label class="block text-gray-600 font-medium mb-2">AI Answer:</label>
+            <pre id="answer" class="bg-gray-100 rounded p-4 min-h-[60px] text-gray-800 whitespace-pre-wrap"></pre>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
