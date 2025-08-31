@@ -20,15 +20,13 @@ This project is an AI-powered assistant designed to help Nigerian university stu
 tokari-core-finetune/
 │
 ├── backend/
+│   ├── finetune.py 
 │   ├── main.py            # Flask backend API
 │   └── requirements.txt   # Python dependencies
 │
 ├── src/
 │   ├── index.html         # Frontend UI
 │   └── main.js            # Frontend JS logic
-│
-├── ai-model/
-│   └── finetune.py        # Prompt builder using Q&A data
 │
 └── data/
     ├── qa_data.jsonl

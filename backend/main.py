@@ -8,7 +8,10 @@ API_URL = "https://tokari-core.onrender.com/api/v1/ai/chat-completion"
 API_KEY = "tokari-0f8652c5-2fba-416e-9872-7e8387bf0af3";
 
 app = Flask(__name__)
-CORS(app)
+#use resources in production only
+# CORS(app)- development
+#restrict to only the frontend domain
+CORS(app, resources={r"/ask": {"origins": "https://takori-finetune.vercel.app"}})
 
 @app.route('/ask', methods=['POST'])
 def ask():
